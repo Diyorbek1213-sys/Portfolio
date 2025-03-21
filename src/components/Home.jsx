@@ -160,7 +160,7 @@ export default function Home() {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] h-full"
+              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428]/75 via-[#251043]/75 to-[#190634]/75 h-full"
             >
               <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center mt-3">
                 <img src={telegram} alt="telegram" />
@@ -187,7 +187,7 @@ export default function Home() {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] h-full"
+              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428]/75 via-[#251043]/75 to-[#190634]/75 h-full"
             >
               <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center mt-3">
                 <img src={fiverr} alt="fiverr" />
@@ -214,7 +214,7 @@ export default function Home() {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] h-full"
+              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428]/75 via-[#251043]/75 to-[#190634]/75 h-full"
             >
               <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center mt-3">
                 <img src={twitter} alt="twitter" />
@@ -241,7 +241,7 @@ export default function Home() {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] h-full"
+              className="flex gap-6 p-6 border-t-4 border-[#4F228D] rounded-xl shadow-lg bg-gradient-to-r from-[#130428]/75 via-[#251043]/75 to-[#190634]/75 h-full"
             >
               <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center mt-3">
                 <img className='w-full h-full' src={facebook} alt="facebook" />
