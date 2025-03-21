@@ -35,7 +35,7 @@ const Home = () => {
               Hello! I Am <span className='text-[#7127BA]'>Diyorbek</span>
             </motion.h3>
 
-            <div className='flex items-center space-x-[-50px]'>
+            <div className='flex items-center space-x-[-50px] xl:'>
               <motion.img
                 custom={1}
                 initial="hidden"
@@ -124,7 +124,7 @@ const Home = () => {
       <section id='experience'>
         <div
           name="lab"
-          className="bg-no-repeat bg-[20px_40px] mt-[40px] md:bg-[50px_40px]"
+          className="bg-no-repeat bg-[20px_40px] mt-[40px] md:bg-[50px_40px] lg:bg-[200px_-40px] xl:bg-[330px_-40px] 2xl:bg-[450px_-40px]"
           style={{ backgroundImage: `url(${Gradient})` }}
         >
           <motion.h2
