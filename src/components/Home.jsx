@@ -20,12 +20,12 @@ const Home = () => {
 
 
   return (
-    <div className='font-[Preahvihear] text-[#E9D8FE] pt-[130px]'>
+    <div className='font-[Preahvihear] text-[#E9D8FE] pt-[130px] sm:pt-[200px]'>
       <section id='hero'>
         <div className='flex justify-center items-center flex-col'>
           <div className='flex justify-center flex-col mt-[10px] items-start'>
             <motion.h3
-              className="text-[19px] text-white"
+              className="text-[19px] text-white sm:ml-15 md:text-[25px] xl:text-[35px]"
               custom={0}
               initial="hidden"
               whileInView="visible"
@@ -43,13 +43,14 @@ const Home = () => {
                 variants={fadeInUp}
                 viewport={{ once: true, amount: 0.2 }}
                 src={dev} alt="dev" />
-              <div className='max-w-[386px]'>
+              <div className='max-w-[386px] xl:max-w-[700px]'>
                 <motion.h3
                   custom={2}
                   initial="hidden"
                   whileInView="visible"
                   variants={fadeInUp}
                   viewport={{ once: true, amount: 0.2 }}
+                  className='xl:text-[25px]'
                 >
                   Who is a Web Developer?
                 </motion.h3>
@@ -59,11 +60,11 @@ const Home = () => {
                   whileInView="visible"
                   variants={fadeInUp}
                   viewport={{ once: true, amount: 0.2 }}
-                  className='text-[40px] text-[#E9D8FE] tracking-[0.32px]'
+                  className='text-[40px] text-[#E9D8FE] tracking-[0.32px] sm:text-[25px] md:text-[35px] xl:text-[40px]'
                 >
                   Frontend Developer | <span className='text-[#7127BA]'>UI</span>/<span className='text-[#7127BA]'>UX</span> Enthusiast
                 </motion.h2>
-                <motion.p className='text-[14px] text-[#E9D8FE] tracking-[0.32px]'
+                <motion.p className='text-[14px] text-[#E9D8FE] tracking-[0.32px] md:text-[20px]'
                   custom={4}
                   initial="hidden"
                   whileInView="visible"
@@ -74,16 +75,16 @@ const Home = () => {
                 </motion.p>
               </div>
             </div>
-            <div name="about" className='max-w-[674px] mb-[70px]'>
+            <div name="about" className='max-w-[674px] mb-[70px] sm:mx-auto xl:max-w-[800px]'>
               <motion.h2
                 custom={5}
                 initial="hidden"
                 whileInView="visible"
                 variants={fadeInUp}
                 viewport={{ once: true, amount: 0.2 }}
-                className='text-[25px] tracking-[0.32px]'
+                className='text-[25px] tracking-[0.32px] lg:max-w-[700px] lg:text-[30px] sm:text-[20px] md:text-[25px] md:max-w-[600px] sm:max-w-[400px] sm:text-center'
               >Passionate about web development, UI/UX, and building interactive, high-performance websites.</motion.h2>
-              <motion.h3 className='text-[21px] tracking-[0.32px] text-[#B378FE]'
+              <motion.h3 className='text-[21px] tracking-[0.32px] text-[#B378FE] lg:text-center md:text-[25px] sm:text-[15px]'
                 custom={6}
                 initial="hidden"
                 whileInView="visible"
@@ -93,25 +94,29 @@ const Home = () => {
                 Freelancer on Fiverr | Open-source Contributor
               </motion.h3>
             </div>
-            <motion.h3
-              custom={7}
-              initial="hidden"
-              whileInView="visible"
-              variants={fadeInUp}
-              viewport={{ once: true, amount: 0.2 }}
-              className='text-[50px]'
-            >About me,
-            </motion.h3>
-            <motion.p
-              custom={8}
-              initial="hidden"
-              whileInView="visible"
-              variants={fadeInUp}
-              viewport={{ once: true, amount: 0.2 }}
-              className='max-w-[892px] text-[22px] tracking-[0.32px]'
-            >
-              A self-taught Frontend Developer specializing in React.js, Next.js, and modern web technologies. With a strong foundation in JavaScript, HTML, and CSS, I build interactive, high-performance, and user-centric digital experiences. Passionate about API integration, responsive design, and seamless UI/UX, I craft meaningful web applications that balance innovation, aesthetics, and functionality. My goal is to bridge the gap between user needs and business objectives by developing scalable, efficient, and visually appealing web solutions that leave a lasting impact
-            </motion.p>
+            <div className='sm:max-w-[100%] sm:mx-auto sm:text-center md:text-start lg:max-w-[100%] xl:max-w-[100%]'>
+              <motion.h3
+                custom={7}
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className='text-[50px] sm:text-[30px] md:text-[45px] lg:text-[55px]'
+              >
+                About me,
+              </motion.h3>
+              <motion.p
+                custom={8}
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                viewport={{ once: true, amount: 0.2 }}
+                className='w-full text-[22px] tracking-[0.32px] sm:text-[15px] md:text-[20px] lg:text-[25px]'
+              >
+                A self-taught Frontend Developer specializing in React.js, Next.js, and modern web technologies. With a strong foundation in JavaScript, HTML, and CSS, I build interactive, high-performance, and user-centric digital experiences. Passionate about API integration, responsive design, and seamless UI/UX...
+              </motion.p>
+            </div>
+
           </div>
         </div>
       </section>
@@ -119,13 +124,8 @@ const Home = () => {
       <section id='experience'>
         <div
           name="lab"
-          style={{
-            backgroundImage: `url(${Gradient})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPositionX: '360px',
-            backgroundPositionY: '40px',
-          }}
-          className='pt-25 pb-5'
+          className="bg-no-repeat bg-[20px_40px] mt-[40px] md:bg-[50px_40px]"
+          style={{ backgroundImage: `url(${Gradient})` }}
         >
           <motion.h2
             custom={8}
@@ -133,21 +133,19 @@ const Home = () => {
             whileInView="visible"
             variants={fadeInUp}
             viewport={{ once: true, amount: 0.2 }}
-            className='text-[35px]'
+            className='text-[35px] sm:text-center'
           >
             Contact me
           </motion.h2>
 
-          {/* https://www.fiverr.com/birorkimbiror */}
-
-          <div className='mt-[44px] grid grid-cols-2 gap-x-5 gap-y-5 pb-[50px]'>
+          <div className='mt-[44px] grid grid-cols-2 gap-x-5 gap-y-5 pb-[50px] sm:grid-cols-1 sm:place-items-center lg:grid-cols-2'>
             <motion.div
               custom={9}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="mb-[18px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
+              className="mb-[18px] xl:max-w-[600px] lg:max-w-[400px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
             >
               <img src={telegram} alt="telegram" />
               <div>
@@ -169,7 +167,7 @@ const Home = () => {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="mb-[18px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
+              className="mb-[18px] xl:max-w-[600px] lg:max-w-[400px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
             >
               <img src={fiverr} alt="fiverr" />
               <div>
@@ -191,7 +189,7 @@ const Home = () => {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="mb-[18px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
+              className="mb-[18px] xl:max-w-[600px] lg:max-w-[400px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
             >
               <img src={twitter} alt="twitter" />
               <div>
@@ -213,7 +211,7 @@ const Home = () => {
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
-              className="mb-[18px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
+              className="mb-[18px] xl:max-w-[600px] lg:max-w-[400px] flex gap-[26px] py-[36px] px-[50px] border-t-4 border-[#4F228D] w-[570px] h-[192px] p-6 text-white rounded-xl shadow-lg bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634]"
             >
               <img src={facebook} alt="facebook" />
               <div>
@@ -229,14 +227,14 @@ const Home = () => {
               </div>
             </motion.div>
 
-            <motion.div className='bg-[#FFFFFF]/5 backdrop-blur-lg p-5 rounded-2xl flex items-center gap-4'
+            <motion.div className='bg-[#FFFFFF]/5 lg:ml-[50px] backdrop-blur-lg p-5 rounded-2xl flex items-center gap-4 sm:max-w-[550px]'
               custom={13}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
             >
-              <h2 className='text-[30px]'>All my projects are in this link (GitHub)</h2>
+              <h2 className='text-[30px] sm:text-[19px]'>All my projects are in this link (GitHub)</h2>
               <motion.a href='https://github.com/Diyorbek1213-sys' target='blank'
                 whileHover={{ scale: 1.1, color: "#875eae" }}
                 whileTap={{ scale: 0.9, opacity: 0.8 }}
