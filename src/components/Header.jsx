@@ -11,8 +11,8 @@ const Header = () => {
             <div>
                 <nav>
                     <ul className='flex items-center gap-[168px]'>
-                        <li className='text-white font-[jakarta] font-semibold tracking-[0.32px]'><Link to="about" smooth={true} duration={1000} offset={-200} className="cursor-pointer hover:text-gray-400 hover:underline transition-all">About</Link></li>
-                        <li className='text-white font-[jakarta] font-semibold tracking-[0.32px]'><Link to="lab" smooth={true} duration={1000} offset={-100} className="cursor-pointer hover:text-gray-400 hover:underline transition-all">Experiences</Link></li>
+                        <li className='text-white font-[jakarta] font-semibold tracking-[0.32px]'><Link to="about" smooth={true} duration={1000} offset={-500} className="cursor-pointer hover:text-gray-400 hover:underline transition-all">About</Link></li>
+                        <li className='text-white font-[jakarta] font-semibold tracking-[0.32px]'><Link to="contact" smooth={true} duration={1000} offset={-100} className="cursor-pointer hover:text-gray-400 hover:underline transition-all">Contact</Link></li>
                     </ul>
                 </nav>
             </div>
