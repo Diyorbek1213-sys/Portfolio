@@ -106,6 +106,85 @@ export default function Home() {
               >
                 Freelancer on Fiverr | Open-source Contributor
               </motion.h3>
+              <motion.h3
+                className="text-lg md:text-xl lg:text-2xl text-[#E9D8FE] mt-4"
+                custom={7}
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                viewport={{ once: true, amount: 0.2 }}
+              >My Skills</motion.h3>
+              <motion.ul
+                className="mt-3 grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                custom={8}
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInUp}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  JavaScript-(ES6+)
+                </motion.li>
+
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  React.js
+                </motion.li>
+
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  Next.js
+                </motion.li>
+
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  Framer-Motion
+                </motion.li>
+
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  Zustand
+                </motion.li>
+
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  Tailwind-CSS
+                </motion.li>
+
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  TypeScript
+                </motion.li>
+              </motion.ul>
             </div>
           </div>
         </div>
@@ -114,7 +193,7 @@ export default function Home() {
       <section id="about" className="mb-16 md:mb-24">
         <div className="max-w-6xl mx-auto">
           <motion.h3
-            custom={7}
+            custom={9}
             initial="hidden"
             whileInView="visible"
             variants={fadeInUp}
@@ -124,7 +203,7 @@ export default function Home() {
             About me,
           </motion.h3>
           <motion.p
-            custom={8}
+            custom={10}
             initial="hidden"
             whileInView="visible"
             variants={fadeInUp}
@@ -142,7 +221,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-radial from-[#4F228D]/30 to-transparent opacity-50 pointer-events-none"></div>
         <div className="relative z-10 max-w-6xl mx-auto">
           <motion.h2
-            custom={8}
+            custom={11}
             initial="hidden"
             whileInView="visible"
             variants={fadeInUp}
@@ -155,7 +234,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pb-16">
             {/* Telegram */}
             <motion.div
-              custom={9}
+              custom={12}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
@@ -182,7 +261,7 @@ export default function Home() {
 
             {/* Fiverr */}
             <motion.div
-              custom={10}
+              custom={13}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
@@ -209,7 +288,7 @@ export default function Home() {
 
             {/* Twitter */}
             <motion.div
-              custom={11}
+              custom={14}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
@@ -236,7 +315,7 @@ export default function Home() {
 
             {/* Facebook */}
             <motion.div
-              custom={12}
+              custom={15}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
@@ -265,7 +344,7 @@ export default function Home() {
           {/* GitHub Section */}
           <motion.div
             className="bg-[#FFFFFF]/5 backdrop-blur-lg p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 mb-16 max-w-4xl mx-auto"
-            custom={13}
+            custom={16}
             initial="hidden"
             whileInView="visible"
             variants={fadeInUp}
