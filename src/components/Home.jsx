@@ -184,6 +184,14 @@ export default function Home() {
                 >
                   TypeScript
                 </motion.li>
+                <motion.li
+                  className="bg-[#693B93] rounded-md p-2 cursor-crosshair text-[18px] whitespace-nowrap"
+                  whileHover={{ scale: 1.1, color: "#B3FFFF" }}
+                  whileTap={{ scale: 0.9, opacity: 0.8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  Redux Toolkit
+                </motion.li>
               </motion.ul>
             </div>
           </div>
