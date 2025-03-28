@@ -386,6 +386,9 @@ export default function Home() {
               </svg>
             </motion.a>
           </motion.div>
+
+
+          <h1 className='text-[#] font-bold text-center text-[50px] pb-[102px]'>0</h1>
         </div>
       </section>
     </div>
