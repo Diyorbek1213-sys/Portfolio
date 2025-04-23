@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Small e-commerce",
+        "description": "This e-commerce website was built using Redux Toolkit and RTK Query. It features category-based filtering, product sorting, and a search functionality.",
+        "image": "/assets/ecommerce.png",
+        "link": "https://small-e-commerce-theta.vercel.app/",
+        "github": "https://github.com/Diyorbek1213-sys/small-e-commerce"
+    },
+    {
+        "id": 2,
+        "title": "Simple YouTube clone",
+        "description": "This website is a partial clone of YouTube, replicating core features such as video playback and comment viewing.",
+        "image": "/assets/clone.png",
+        "link": "https://8-oy-4-uy.vercel.app/",
+        "github": "https://github.com/Diyorbek1213-sys/8-oy-4-uy"
+    },
+    {
+        "id": 3,
+        "title": "E-commerce",
+        "description": "This e-commerce website includes features such as adding items to a wishlist, adding to and removing from the shopping cart, along with several other functionalities.",
+        "image": "/assets/ecommerce_2.png",
+        "link": "https://7-oy-5-uy.vercel.app/",
+        "github": "https://github.com/Diyorbek1213-sys/7-oy-5-uy"
+    },
+    {
+        "id": 4,
+        "title": "Blog site with auth",
+        "description": "This blog website was built with user authentication (register and login) and full CRUD functionality.",
+        "image": "/assets/blog.png",
+        "link": "https://5-oy-imthon-329f.vercel.app/",
+        "github": "https://github.com/Diyorbek1213-sys/5-oy-imthon"
+    }
+]
