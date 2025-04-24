@@ -458,10 +458,30 @@ export default function Home() {
             </motion.div>
           </div>
 
+          <div className="flex justify-center items-center mb-10">
+            <motion.a
+              href="download"
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={{ once: true, amount: 0.1 }}
+              custom={19}
+              download={'../public/Resume.pdf'}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, color: "#875eae" }}
+              whileTap={{ scale: 0.95, opacity: 0.8 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="rounded-lg border bg-[#2C1250] border-[#693B93] text-sm font-[Poppins] py-2 px-4 inline-block mt-3 cursor-pointer"
+            >
+              Download Resume
+            </motion.a>
+          </div>
+
           {/* GitHub Section */}
           <motion.div
             className="bg-[#FFFFFF]/5 backdrop-blur-lg p-4 sm:p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 mb-16 max-w-4xl mx-auto"
-            custom={19}
+            custom={20}
             initial="hidden"
             whileInView="visible"
             variants={fadeInUp}
@@ -500,7 +520,7 @@ export default function Home() {
           <div className="text-center pb-37">
             <motion.h1
               className="font-bold text-3xl sm:text-4xl md:text-5xl"
-              custom={20}
+              custom={21}
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
