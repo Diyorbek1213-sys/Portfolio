@@ -460,13 +460,13 @@ export default function Home() {
 
           <div className="flex justify-center items-center mb-10">
             <motion.a
-              href="download"
+              href="/Resume.pdf"
               initial="hidden"
               whileInView="visible"
               variants={fadeInUp}
               viewport={{ once: true, amount: 0.1 }}
               custom={19}
-              download={'../public/Resume.pdf'}
+              download
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, color: "#875eae" }}
